@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>kids section</title>
+    <style>
+      body {
+        background-image: url(https://st2.depositphotos.com/1173077/10090/v/450/depositphotos_100900792-stock-illustration-construction-worker-building-a-puzzle.jpg);
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: 100vh;
+      }
+
+      @media screen and (max-width: 768px) {
+        body {
+          background-size: cover; /* Ensures background fills the screen */
+          background-position: top;
+        }
+      }
+      header {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        gap: 15px;
+      }
+
+      #image {
+        width: 7em;
+        height: 7em;
+      }
+
+      /* Navigation bar */
+      .navbar {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5em;
+        list-style: none;
+        position: relative;
+        z-index: 1000;
+      }
+
+      .navbar li a {
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+      }
+
+      .navbar li a:hover {
+        color: #007bff;
+      }
+
+      /* Dropdown menu responsiveness */
+      .navbar .dropdown-item {
+        position: relative;
+        z-index: 1001;
+      }
+
+      .navbar .dropdown-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        list-style: none;
+        background-color: #333;
+        padding: 10px 0;
+        min-width: 150px;
+        z-index: 1002;
+      }
+
+      .navbar .dropdown-item:hover .dropdown-menu {
+        display: block;
+      }
+
+      .navbar .dropdown-menu li a {
+        color: white;
+        display: block;
+        padding: 8px 15px;
+      }
+
+      .navbar .dropdown-menu li a:hover {
+        background-color: #444;
+      }
+
+      /* Responsive search bar */
+      .browse {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+      }
+
+      .browse input {
+        border-radius: 0.5em;
+        padding: 5px;
+      }
+
+      .browse button {
+        background-color: aqua;
+        border-radius: 0.3rem;
+        padding: 5px 10px;
+      }
+
+      /* Delivery section */
+      .delivery {
+        display: flex;
+        align-items: center;
+        font-size: larger;
+        font-weight: bolder;
+      }
+
+      footer p {
+        font-size: larger;
+        font-weight: bolder;
+        color: black;
+        background-color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div>
+        <img src="logo.png" alt="logo" id="image" />
+      </div>
+
+      <div class="dropdown">
+        <ul class="navbar">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="aboutus.html">About Us</a></li>
+          <!--*************************-->
+          <li class="dropdown-item">
+            <a href="#">Books</a>
+            <ul class="dropdown-menu">
+              <li><a href="romance.html">Romance</a></li>
+              <li><a href="horror.html">Horror</a></li>
+              <li><a href="kids.html">Kids</a></li>
+            </ul>
+          </li>
+          <!--***********************-->
+          <!-- Dropdown for 19th Century -->
+          <li><a href="19th.html">19th Century</a></li>
+
+          <!--***************************-->
+          <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <form action="" class="browse">
+          <p>Browse :</p>
+          <input type="text" placeholder="Browse books" />
+          <button id="#button">submit</button>
+        </form>
+      </div>
+
+      <div class="delivery">
+        <p>Delivery :</p>
+        <a href="delivery.html">
+          <img
+            src="https://static.vecteezy.com/system/resources/previews/019/796/973/non_2x/motorbike-delivery-man-logo-icon-symbol-template-free-vector.jpg"
+            alt=""
+            id="image"
+          />
+        </a>
+      </div>
+    </header>
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+
+    <!--**************Footer***************-->
+    <footer>
+      <p>
+        🛠️ Work in Progress! Good things take time—our team is busy crafting
+        this page. See you soon! Would you like me to add a contact option or
+        estimated launch date? 😊
+      </p>
+    </footer>
+  </body>
+</html>

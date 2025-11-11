@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Romance Section</title>
+    <link rel="stylesheet" href="books.css" />
+  </head>
+  <style>
+    /*This is the footer part design*/
+    #footer {
+      background: linear-gradient(to bottom, brown, rgb(243, 96, 5));
+      text-align: center;
+    }
+
+    .text {
+      color: aqua;
+      text-align: center;
+    }
+
+    .image-logo {
+      width: 24px;
+      height: 24px;
+    }
+  </style>
+  <body>
+    <header>
+      <div>
+        <img src="logo.png" alt="logo" id="image" />
+      </div>
+
+      <div class="dropdown">
+        <ul class="navbar">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="aboutus.html">About Us</a></li>
+          <!--*************************-->
+          <li class="dropdown-item">
+            <a href="#">Books</a>
+            <ul class="dropdown-menu">
+              <li><a href="romance.html">Romance</a></li>
+              <li><a href="horror.html">Horror</a></li>
+              <li><a href="kids.html">Kids</a></li>
+            </ul>
+          </li>
+          <!--***********************-->
+          <!-- Dropdown for 19th Century -->
+          <li><a href="19th.html">19th Century</a></li>
+
+          <!--***************************-->
+          <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <form action="" class="browse">
+          <p>Browse :</p>
+          <input
+            type="text"
+            placeholder="Browse books"
+            id="search-input"
+            onkeyup="searchBooks()"
+          />
+          <button id="#button">submit</button>
+        </form>
+      </div>
+
+      <div class="delivery">
+        <p>Delivery :</p>
+        <a href="delivery.html">
+          <img
+            src="https://static.vecteezy.com/system/resources/previews/019/796/973/non_2x/motorbike-delivery-man-logo-icon-symbol-template-free-vector.jpg"
+            alt=""
+            id="image"
+          />
+        </a>
+      </div>
+    </header>
+
+    <div class="books-container">
+      <!-- Book 1 -->
+      <div class="book">
+        <img
+          src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRA2DFNGBfCwWc_TzG5ztidUIEVgimp0ha8KShILrpPOXtbZCT-"
+          alt="The Notebook"
+        />
+        <h3>The Notebook</h3>
+        <p><strong>By Nicholas Sparks</strong></p>
+        <p class="book-price">$19.99</p>
+        <div class="description">
+          The Notebook is a contemporary love story set in the pre- and
+          post-World War II era.
+        </div>
+
+        <!-- Location Selection -->
+        <div class="location-selector">
+          <label for="location">Select Delivery Location:</label>
+          <select id="location">
+            <option value="">Select Location</option>
+            <option value="UK">UK</option>
+            <option value="Europe">Europe</option>
+            <option value="US/Canada">United States/Canada</option>
+            <option value="Rest of the World">Rest of the World</option>
+          </select>
+          <p id="delivery-charge"></p>
+        </div>
+
+        <!-- Add to Cart Button -->
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      <!-- ********************************Book 2*********************** -->
+      <div class="book">
+        <img
+          src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTNwaPdwTwPW7xgNJ2O-fdW7lohY0q5sEJSITHJoQglW4i-YFnk"
+          alt="The Notebook"
+        />
+        <h3>Love, Theoretically</h3>
+        <p><strong>By ALI HAZELWOOD</strong></p>
+        <p class="book-price">$23.99</p>
+        <div class="description">
+          Theoretical physicist Elsie Hannaway’s double life collides with Jack
+          Smith-Turner, her career nemesis. As tensions rise, so do unexpected
+          feelings, forcing Elsie to choose between ambition, love, and her true
+          self.
+        </div>
+
+        <!-- Location Selection -->
+        <div class="location-selector">
+          <label for="location">Select Delivery Location:</label>
+          <select id="location">
+            <option value="">Select Location</option>
+            <option value="UK">UK</option>
+            <option value="Europe">Europe</option>
+            <option value="US/Canada">United States/Canada</option>
+            <option value="Rest of the World">Rest of the World</option>
+          </select>
+          <p id="delivery-charge"></p>
+        </div>
+
+        <!-- Add to Cart Button -->
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      <!-- ********************************Book 3*********************** -->
+      <div class="book">
+        <img
+          src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1718998299i/212808709.jpg"
+          alt="Deep End"
+        />
+        <h3>Deep End</h3>
+        <p class="book-price">$30.00</p>
+        <p><strong>By Ali Hazelwood</strong></p>
+        <div class="description">
+          A competitive diver and an ace swimmer jump into forbidden waters in
+          this steamy college romance from the New York Times bestselling author
+          of The Love Hypothesis.
+        </div>
+
+        <!-- Location Selection -->
+        <div class="location-selector">
+          <label for="location">Select Delivery Location:</label>
+          <select id="location">
+            <option value="">Select Location</option>
+            <option value="UK">UK</option>
+            <option value="Europe">Europe</option>
+            <option value="US/Canada">United States/Canada</option>
+            <option value="Rest of the World">Rest of the World</option>
+          </select>
+          <p id="delivery-charge"></p>
+        </div>
+
+        <!-- Add to Cart Button -->
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+    <br />
+
+    <!--***********************************Second Section*********************************-->
+    <div class="books-container">
+      <!-- Book 1 -->
+      <div class="book">
+        <img
+          src="https://m.media-amazon.com/images/I/91WZbuhRfqL._AC_UF1000,1000_QL80_.jpg"
+          alt="Kiss Me, Mi Amor"
+        />
+        <h3>Kiss Me, Mi Amor</h3>
+        <p><strong>By Alana Quintana Albertson</strong></p>
+        <p class="book-price">$17.00</p>
+        <div class="description">
+          It turns out that a fake relationship is the perfect recipe for a love
+          that sizzles hotter than Santa Barbara’s spiciest salsa … when it’s
+          between enemies.
+        </div>
+
+        <!-- Location Selection -->
+        <div class="location-selector">
+          <label for="location">Select Delivery Location:</label>
+          <select id="location">
+            <option value="">Select Location</option>
+            <option value="UK">UK</option>
+            <option value="Europe">Europe</option>
+            <option value="US/Canada">United States/Canada</option>
+            <option value="Rest of the World">Rest of the World</option>
+          </select>
+          <p id="delivery-charge"></p>
+        </div>
+
+        <!-- Add to Cart Button -->
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      <!-- ********************************Book 2*********************** -->
+      <div class="book">
+        <img
+          src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1649027576l/60621070.jpg"
+          alt="Drunk on Love"
+        />
+        <h3>Drunk on Love</h3>
+        <p><strong>By Jasmine Guillory</strong></p>
+        <p class="book-price">$18.00</p>
+        <div class="description">
+          Margot Noble needs some relief from the stress of running the family
+          winery. Enter Luke: Sexy, charming, and best of all in the too-small
+          world of Napa, a stranger. The chemistry between them is undeniable,
+          and Margot is delighted that she lucked into the perfect one-night
+          stand she’ll never have to see again. That is, until the winery’s
+          newest hire, Luke, walks in the next morning … An intoxicating and
+          sparkling romance by New York Times bestselling author Jasmine
+          Guillory.
+        </div>
+
+        <!-- Location Selection -->
+        <div class="location-selector">
+          <label for="location">Select Delivery Location:</label>
+          <select id="location">
+            <option value="">Select Location</option>
+            <option value="UK">UK</option>
+            <option value="Europe">Europe</option>
+            <option value="US/Canada">United States/Canada</option>
+            <option value="Rest of the World">Rest of the World</option>
+          </select>
+          <p id="delivery-charge"></p>
+        </div>
+
+        <!-- Add to Cart Button -->
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      <!-- ********************************Book 3*********************** -->
+      <div class="book">
+        <img
+          src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1688188444i/36199084.jpg"
+          alt="The Kiss Quotient"
+        />
+        <h3>The Kiss Quotient</h3>
+        <p><strong>By Helen Hoang </strong></p>
+        <p class="book-price">$16.00</p>
+        <div class="description">
+          A heartwarming and refreshing debut novel that proves one thing:
+          there’s not enough data in the world to predict what will make your
+          heart tick.
+        </div>
+
+        <!-- Location Selection -->
+        <div class="location-selector">
+          <label for="location">Select Delivery Location:</label>
+          <select id="location">
+            <option value="">Select Location</option>
+            <option value="UK">UK</option>
+            <option value="Europe">Europe</option>
+            <option value="US/Canada">United States/Canada</option>
+            <option value="Rest of the World">Rest of the World</option>
+          </select>
+          <p id="delivery-charge"></p>
+        </div>
+
+        <!-- Add to Cart Button -->
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+    <!--*****************Footer****************-->
+    <footer id="footer">
+      <p class="text">
+        "Every love story is beautiful, but yours is our favorite. 💕"
+      </p>
+      <p class="text">
+        Connect with us for more romance:
+        <a href="https://www.facebook.com/share/15cAHWZMgM/" target="_blank">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5ZvNX7soTjXlqYy9LUW7_3TNemfs6wPGR-Q&s"
+            alt="facebook"
+            class="image-logo"
+        /></a>
+        |
+        <a href="https://www.instagram.com/yovun.0510/" target="_blank">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRq4yMAtzwb7DARCqj85yS9rRqZn_2TdKR0zA&s"
+            alt="Instagram"
+            class="image-logo"
+          />
+        </a>
+      </p>
+
+      <p class="text">© 2025 Yovun's Bookstore | Where Hearts Meet.</p>
+    </footer>
+
+    <script src="location.js"></script>
+  </body>
+</html>

@@ -1,0 +1,64 @@
+body {
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(to bottom, #553fe9, #d399ff);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+header {
+  align-items: center;
+  display: flex;
+  padding: 1vh;
+}
+
+header img {
+  width: 5em;
+  height: 6em;
+}
+.display {
+  align-items: center;
+}
+.display p {
+  text-align: center;
+  color: white;
+}
+h1 {
+  text-align: center;
+  color: brown;
+  background-color: #d399ff;
+}
+#logo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+}
+
+.TableContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#table {
+  background-color: aqua;
+  border-radius: 10px;
+}
+.input {
+  background-color: lightgrey;
+  border-radius: 10px;
+}
+
+.text-edit {
+  font-weight: bold;
+  font-family: "Courier New", Courier, monospace;
+}
+
+#footer {
+  background-color: black;
+}
+
+.text {
+  color: aqua;
+  text-align: center;
+}
